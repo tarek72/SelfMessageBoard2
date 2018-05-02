@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8d9dc"
+    android:paddingBottom="@dimen/vertical_padding"
+    android:paddingEnd="@dimen/horizontal_padding"
+    android:paddingStart="@dimen/horizontal_padding"
+    android:paddingTop="@dimen/vertical_padding">
+
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="295dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView5"
+        android:text="This is the name of author" />
+
+    <TextView
+        android:id="@+id/textViewTimeStamp"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView7"
+        android:text="TimeStamp" />
+
+    <TextView
+        android:id="@+id/textViewMessageContent"
+        android:layout_width="293dp"
+        android:layout_height="243dp"
+        android:layout_alignEnd="@+id/textViewAuthor"
+        android:layout_below="@+id/textView6"
+        android:text="Message content" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:text="Sent By :"
+        tools:text="Sent By :" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewTimeStamp"
+        android:text="Message content :"
+        tools:text="Message content :" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewAuthor"
+        android:text="Recieved :"
+        tools:text="Sent :" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:text="Delete" />
+
+</RelativeLayout>
